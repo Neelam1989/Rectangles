@@ -31,8 +31,6 @@ namespace RectanglesCommandTest
         public void Test_PlaceRectangles_Placed(string parameters)
         {
             bool res = rectangle.PlaceRectangles(parameters);
-            X.Add(4);
-            Y.Add(6);
             Assert.AreEqual(res, true);
         }
 
@@ -40,8 +38,7 @@ namespace RectanglesCommandTest
         public void Test_FindRectangles_Found(string parameters)
         {
             rectangle.FindRectangle(parameters);
-            Assert.IsTrue(X.Count > 0);
-            Assert.IsTrue(Y.Count > 0);
+
         }
 
         [TestCase("4,6")]

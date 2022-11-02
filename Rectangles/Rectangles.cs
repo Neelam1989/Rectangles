@@ -18,7 +18,6 @@ namespace RectanglesCommands
 		{
 			try
 			{
-				string res;
 				switch (command.ToUpper())
 				{
 					case "PLACE":
